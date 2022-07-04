@@ -1,0 +1,38 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+h2 {
+  font: 60% Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+}
+
+.tag-container-red {
+  display: flex;
+  background-color: #db3535;
+}
+
+.tag-container-blue {
+  display: flex;
+  background-color: #2785c9;
+}
+
+#Toledo-card {
+  display: flex;
+  background-image: url(../assets/Toledo.jpeg) no-repeat;
+  padding: 0 0 0 10px;
+  margin: 5px 0;
+}
+
+#Boboli-Garden-card {
+  display: flex;
+  background-image: url(../assets/BoboliGardens.jpeg) no-repeat;
+  padding: 0 0 0 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

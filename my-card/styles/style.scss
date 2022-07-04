@@ -1,17 +1,44 @@
 $font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+$primary-color: #ffffff;
+$tag-color-red: #db3535;
+$tag-color-blue: #2785c9;
 
 body {
     font: 100% $font-stack;
     color: $primary-color;
 }
 
+h2 {
+    font: 60% $font-stack;
+    color: $primary-color
+}
+
 .container {
     display: flex;
 }
 
-#card-1 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+.tag-container-red {
+    display: flex;
+    background-color: $tag-color-red;
+}
+
+.tag-container-blue {
+    display: flex;
+    background-color: $tag-color-blue;
+}
+
+#Toledo-card {
+    //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    //transition: 0.3s;
+    display: flex;
+    background-image: url(../assets/Toledo.jpeg) no-repeat;
+    padding: 0 0 0 10px;
+    margin: 5px 0;
+}
+
+#Boboli-Garden-card {
+    display: flex;
+    background-image: url(../assets/BoboliGardens.jpeg) no-repeat;
+    padding: 0 0 0 10px;
 }
     
