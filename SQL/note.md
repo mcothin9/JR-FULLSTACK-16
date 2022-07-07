@@ -23,7 +23,7 @@ A statement is text that databse recognizes as a valid command. Always end with 
 
 # Manipulation
 
-1. CREATE TABLE
+## 1. CREATE TABLE
 Create new table in the database.
 ```sql
 CREATE TABLE celebs (
@@ -33,7 +33,7 @@ CREATE TABLE celebs (
 );
 ```
 
-2. INSERT INTO
+## 2. INSERT INTO
 Insert a new `row` into a table.
 Always come with `VALUES`.
 ```sql
@@ -41,13 +41,13 @@ INSERT INTO celebs (id, name, age)
 VALUES (1, 'Justin Bieber', 22);
 ```
 
-3. SELECT
+## 3. SELECT
 Fetch data from a database. This statement will return all data in the `name` column of the `celebs` table.
 ```sql
 SELECT name FROM celebs;
 ```
 
-4. ALTER TABLE
+## 4. ALTER TABLE
 Adds a new column to a table.
 Always come with `ADD COLUMN`.
 ```sql
@@ -55,7 +55,7 @@ ALTER TABLE celebs
 ADD COLUMN twitter_handle TEXT;
 ```
 
-5. UPDATE
+## 5. UPDATE
 Edit row in a table.
 ```sql
 UPDATE celebs 
@@ -63,14 +63,14 @@ SET twitter_handle = '@taylorswift13'
 WHERE id = 4;
 ```
 
-6. DELETE FROM
+## 6. DELETE FROM
 Delete one or more `rows` from a table.
 ```sql
 DELETE FROM celebs 
 WHERE twitter_handle IS NULL;
 ```
 
-7. __Constraints__
+## 7. __Constraints__
 Add information about how a column can be used are invoked after specifying the data type for a column. They can tell the database to reject inserted data that does not adhere to certain restriction.
 ```sql
 CREATE TABLE celebs (
@@ -97,25 +97,25 @@ CREATE TABLE celebs (
 
 # Queries
 
-1. SELECT
+## 1. SELECT
 Query data from a database.
 ```sql
 SELECT column1, column2 
 FROM table_name;
 ```
 
-2. AS
+## 2. AS
 Allows user to __rename__ a column or table using an alias.
 ```sql
 SELECT name AS 'Alias'
 FROM targetTable;
 ```
 
-3. DISTINCT
+## 3. DISTINCT
 Used to return unique values in the output. It filters out all dupliate values in the specified column(s).
 ```sql
 SELECT DISTINCT tools 
 FROM inventory;
 ```
 
-4. WHERE
+## 4. WHERE
