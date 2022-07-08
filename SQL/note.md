@@ -98,6 +98,7 @@ CREATE TABLE celebs (
 # Queries
 
 ## 1. SELECT
+
 Query data from a database.
 ```sql
 SELECT column1, column2 
@@ -105,6 +106,7 @@ FROM table_name;
 ```
 
 ## 2. AS
+
 Allows user to __rename__ a column or table using an alias.
 ```sql
 SELECT name AS 'Alias'
@@ -112,6 +114,7 @@ FROM targetTable;
 ```
 
 ## 3. DISTINCT
+
 Used to return unique values in the output. It filters out all dupliate values in the specified column(s).
 ```sql
 SELECT DISTINCT tools 
@@ -119,3 +122,63 @@ FROM inventory;
 ```
 
 ## 4. WHERE
+
+To restrict query result
+```sql
+SELECT * 
+FROM movies 
+WHERE imdb_rating < 5;
+```
+
+## 5. LIKE
+
+Compare similar values. Always come with `WHERE` clause to search specific pattern in a column.
+
+### i. wildcard character `-`
+
+```sql
+SELECT * 
+FROM movies
+WHERE name LIKE 'Se_en';
+```
+The `_` means that position can be substitute with any individual character.
+
+### ii. wildcard character `%`
+
+```sql
+SELECT * 
+FROM movies
+WHERE name LIKE 'A%';
+```
+`%` matches zero or more missing letters in the pattern.
+- `A%` matches all movies with name that begin with letter 'A'
+- `%a` matches all movies that end with 'a'
+
+## 6. NULL
+
+Unknown value are indicated by `NULL`. Use in `WHERE` clause.
+
+## 7. BETWEEN
+
+Used in `WHERE` clause to filter the result set within a certain range. It accept **two** values that are eithrt numbers, text and dates.
+```sql
+SELECT * 
+FROM movies 
+WHERE year BETWEEN 1970 AND 1979;
+```
+## 8. AND
+
+Combine multiple confitions in a WHERE clause.
+```sql
+SELECT * 
+FROM movies
+WHERE year BETWEEN 1990 AND 1999
+   AND genre = 'romance';
+```
+
+## 9. OR
+
+Display a row if `any` condition if true.
+
+## 10. ORDER BY
+
