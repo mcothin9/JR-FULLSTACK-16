@@ -1,2 +1,12 @@
-谁调用`callback function`，被调用的`callback function`的**this**就指向谁
+## Process
+
+Node.js =>
+API / RESTful API =>
+Express.js =>
+MangoDB =>
+Mangoose =>
+Authorisation / Authentication => 
+Testing => 
+Deployment =>
+Docker
 
