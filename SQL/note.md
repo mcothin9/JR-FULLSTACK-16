@@ -182,3 +182,41 @@ Display a row if `any` condition if true.
 
 ## 10. ORDER BY
 
+Sort the result by either alphabetically or numerically.
+- DESC
+Sort from high to low (Z-A)
+- ASC
+Sort from low to high (A-Z)
+```sql
+SELECT *
+FROM movies
+WHERE imdb_rating > 8
+ORDER BY year DESC;
+```
+
+## LIMIT
+
+Let you specify the maximum number of rows the result set will have.
+```sql
+SELECT * 
+FROM movies 
+ORDER BY imdb_rating DESC 
+LIMIT 3;
+```
+`LIMIT` always hoes at the end of the query. **NOt all database support `LIMIT`.**
+
+## CASE
+
+To create different outputs (usually in the `SELECT` statement).
+- Each `WHEN` tests a condition and the following `THEN` hives us the string if the condition is true.
+- The `ELSE` gives us the string if __all__ the above conditions are false.
+- The `CASE` statement must end with `END`.
+```sql
+SELECT name,
+ CASE
+  WHEN genre = 'romance' THEN 'Chill'
+  WHEN genre = 'comedy' THEN 'Chill'
+  ELSE 'Intense'
+ END AS 'Mood' 
+FROM movies;
+```
