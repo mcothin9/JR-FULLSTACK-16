@@ -598,5 +598,5 @@ function checkscope() {
   }
   return f;
 }
-checkscopr()(); // local
+checkscope()(); // local
 ```
