@@ -32,5 +32,22 @@ I/O操作 => 采用异步}
 
 - JS
    - heap
-   - stack
-   1:58:10
+   - stack (Call Stack)
+- WebAPIs
+   - DOM
+   - ajax (XMLHttpRequest)
+   - setTimeout
+- Callback Queue
+   - onClick
+   - onLoad
+- Event loop process:
+asynchronous event => WebAPI 注册 => 时间完成，进入callback queue => 等待 call stack 为空，queue里的事件先进先出传入 stack
+
+## About node.js back-end
+
+CRUD: create read update delete
+- CRUD Operation
+- CRUD service/server
+
+## Node.js Architecture
+
