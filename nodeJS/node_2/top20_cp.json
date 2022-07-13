@@ -1,0 +1,224 @@
+{
+    "data": [
+        {
+            "_id": "fFKpFbQXHQ26",
+            "pokeId": "792-Full-Moon-Phase",
+            "nickname": "16",
+            "gender": "male",
+            "level": 97,
+            "CP": 130383,
+            "growthRate": 1.5397,
+            "rarity": 0.01,
+            "owner": "Squirtle"
+        },
+        {
+            "_id": "Pk4SeJYUJQbo",
+            "pokeId": "150-Mega-Y",
+            "nickname": "超梦",
+            "gender": "male",
+            "level": 100,
+            "CP": 129015,
+            "growthRate": 1.4757,
+            "rarity": 0.01,
+            "owner": "AnonymousF"
+        },
+        {
+            "_id": "7IsFbHyCzuK5",
+            "pokeId": "150-Mega-Y",
+            "nickname": "Mewtwo",
+            "gender": "male",
+            "level": 100,
+            "CP": 127707,
+            "growthRate": 1.4682,
+            "rarity": 0.01,
+            "owner": "kaiyangli"
+        },
+        {
+            "_id": "9vdB7bL1mp36",
+            "pokeId": "792-Full-Moon-Phase",
+            "nickname": "Lunala",
+            "gender": "male",
+            "level": 100,
+            "CP": 127555,
+            "growthRate": 1.4999,
+            "rarity": 0.01,
+            "owner": "kaiyangli"
+        },
+        {
+            "_id": "rnXMmfJmHWDM",
+            "pokeId": "792-Full-Moon-Phase",
+            "nickname": "Godlike",
+            "gender": "female",
+            "level": 100,
+            "CP": 126548,
+            "growthRate": 1.521,
+            "rarity": 0.01,
+            "owner": "Godlike"
+        },
+        {
+            "_id": "Vb5dccbecSQi",
+            "pokeId": "006-Gigantamax",
+            "nickname": "大龍🔥🔥🔥",
+            "gender": "male",
+            "level": 100,
+            "CP": 125763,
+            "growthRate": 1.5845,
+            "rarity": 0.07,
+            "owner": "Mason"
+        },
+        {
+            "_id": "fxPgbO0GILP4",
+            "pokeId": "150-Mega-X",
+            "nickname": "超梦",
+            "gender": "female",
+            "level": 100,
+            "CP": 125243,
+            "growthRate": 1.4857,
+            "rarity": 0.01,
+            "owner": "#9527"
+        },
+        {
+            "_id": "CcVtI1kR3pnF",
+            "pokeId": "384-Mega",
+            "nickname": "Rayquaza",
+            "gender": "male",
+            "level": 100,
+            "CP": 124570,
+            "growthRate": 1.4999,
+            "rarity": 0.01,
+            "owner": "kaiyangli"
+        },
+        {
+            "_id": "waDZUufG4Xyf",
+            "pokeId": "487-Origin",
+            "nickname": "Giratina",
+            "gender": "male",
+            "level": 100,
+            "CP": 123914,
+            "growthRate": 1.4748,
+            "rarity": 0.01,
+            "owner": "kaiyangli"
+        },
+        {
+            "_id": "pn8xXtsIvsrt",
+            "pokeId": "792-Full-Moon-Phase",
+            "nickname": "露奈雅拉",
+            "gender": "male",
+            "level": 100,
+            "CP": 123841,
+            "growthRate": 1.4779,
+            "rarity": 0.01,
+            "owner": "AnonymousF"
+        },
+        {
+            "_id": "bTht7SuRgIFJ",
+            "pokeId": "791-Radiant-Sun-Phase",
+            "nickname": "Solgaleo",
+            "gender": "female",
+            "level": 100,
+            "CP": 123192,
+            "growthRate": 1.5007,
+            "rarity": 0.01,
+            "owner": "Lee"
+        },
+        {
+            "_id": "dYAZ4KU93zc1",
+            "pokeId": "376-Mega",
+            "nickname": "X战警",
+            "gender": "male",
+            "level": 100,
+            "CP": 123065,
+            "growthRate": 1.5598,
+            "rarity": 0.07,
+            "owner": "Allen"
+        },
+        {
+            "_id": "Y8b9PF1BY1zY",
+            "pokeId": "150-Mega-Y",
+            "nickname": "Mewtwo",
+            "gender": "female",
+            "level": 100,
+            "CP": 123061,
+            "growthRate": 1.4725,
+            "rarity": 0.01,
+            "owner": "kaiyangli"
+        },
+        {
+            "_id": "pNHdhmRq9edq",
+            "pokeId": "150-Mega-Y",
+            "nickname": "超梦",
+            "gender": "male",
+            "level": 100,
+            "CP": 122541,
+            "growthRate": 1.4382,
+            "rarity": 0.01,
+            "owner": "#9527"
+        },
+        {
+            "_id": "Ey43Ut7PMvFS",
+            "pokeId": "445-Mega",
+            "nickname": "DoubleKill",
+            "gender": "male",
+            "level": 100,
+            "CP": 122507,
+            "growthRate": 1.5634,
+            "rarity": 0.07,
+            "owner": "Godlike"
+        },
+        {
+            "_id": "DOBa6fwHc3mC",
+            "pokeId": "487-Origin",
+            "nickname": "骑拉帝纳",
+            "gender": "male",
+            "level": 100,
+            "CP": 122456,
+            "growthRate": 1.4661,
+            "rarity": 0.01,
+            "owner": "AnonymousF"
+        },
+        {
+            "_id": "axhsycokknCc",
+            "pokeId": "006-Mega-X",
+            "nickname": "Charizard",
+            "gender": "male",
+            "level": 100,
+            "CP": 121717,
+            "growthRate": 1.5593,
+            "rarity": 0.07,
+            "owner": "Squirtle"
+        },
+        {
+            "_id": "DfyxcjUmvTWj",
+            "pokeId": "487-Origin",
+            "nickname": "骑拉帝纳",
+            "gender": "male",
+            "level": 100,
+            "CP": 121240,
+            "growthRate": 1.4588,
+            "rarity": 0.01,
+            "owner": "#9527"
+        },
+        {
+            "_id": "rIVmMjQhu5hV",
+            "pokeId": "646-Black",
+            "nickname": "Kyurem",
+            "gender": "male",
+            "level": 100,
+            "CP": 120588,
+            "growthRate": 1.4999,
+            "rarity": 0.07,
+            "owner": "kaiyangli"
+        },
+        {
+            "_id": "LQGeHwAWTKnf",
+            "pokeId": "143-Gigantamax",
+            "nickname": "PentaKill",
+            "gender": "female",
+            "level": 100,
+            "CP": 120537,
+            "growthRate": 1.5706,
+            "rarity": 0.07,
+            "owner": "Godlike"
+        }
+    ]
+}

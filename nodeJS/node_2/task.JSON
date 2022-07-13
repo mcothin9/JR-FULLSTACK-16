@@ -1,0 +1,165 @@
+[
+    {
+        "order": 1,
+        "instruction": "get full list of trainers",
+        "endpoint": {
+            "method": "GET",
+            "path": "/v1/trainers"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null
+    },
+    {
+        "order": 2,
+        "instruction": "find your trainer",
+        "endpoint": {
+            "method": "GET",
+            "path": "/v1/trainers/:id"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null
+    },
+    {
+        "order": 3,
+        "instruction": "update your trainer",
+        "endpoint": {
+            "method": "PUT",
+            "path": "/v1/trainers/:id"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": {
+            "gender": {
+                "accept": "male/female",
+                "description": "male or female",
+                "optional": true
+            },
+            "language": {
+                "accept": "chinese/english",
+                "description": "this language only affects pokemon name",
+                "optional": true
+            }
+        }
+    },
+    {
+        "order": 4,
+        "instruction": "find pokemon!",
+        "endpoint": {
+            "method": "GET",
+            "path": "/v1/pokemon"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null,
+        "description": "keep the pokemon id from the response body"
+    },
+    {
+        "order": 5,
+        "instruction": "capture the pokemon!",
+        "endpoint": {
+            "method": "POST",
+            "path": "/v1/trainers/:id/pokemon/:pokemonId"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null
+    },
+    {
+        "order": 6,
+        "instruction": "release the pokemon!",
+        "endpoint": {
+            "method": "DELETE",
+            "path": "/v1/trainers/:id/pokemon/:pokemonId"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null
+    },
+    {
+        "order": 7,
+        "instruction": "rename your pokemon!",
+        "description": "capture a new pokemon before doing the rename, you can catch up to 18 pokemon, rename the one you love the most!",
+        "rewards": "10000 expBerry (used for level up your pokemon)",
+        "endpoint": {
+            "method": "PUT",
+            "path": "/v1/pokemon/:pokemonId"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": {
+            "nickname": {
+                "accept": "string"
+            }
+        }
+    },
+    {
+        "order": 8,
+        "instruction": "level up your pokemon!",
+        "description": "level affects your pokemon's CP (combat power). Max level is 100, the required expBerry to the next level is depending on the rarity and current level",
+        "rewards": "1000 evolveBerry (used for evolve your pokemon)",
+        "endpoint": {
+            "method": "PUT",
+            "path": "/v1/pokemon/:pokemonId/experience"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": {
+            "expBerry": {
+                "accept": "number",
+                "description": "The number of expBerry you want to use on this pokemon"
+            }
+        }
+    },
+    {
+        "order": 9,
+        "instruction": "evolve your pokemon!",
+        "description": "evolve can increase pokemon's growth rate, which will increase your pokemon's CP (combat power). Not all pokemon are evolvable, you can refer to the evolutions.to property, the array should not be empty. ",
+        "rewards": "10 specialBerry (used for special evolve)",
+        "endpoint": {
+            "method": "PUT",
+            "path": "/v1/pokemon/:pokemonId/evolve"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null
+    },
+    {
+        "order": 10,
+        "instruction": "get top 20 pokemon",
+        "endpoint": {
+            "method": "GET",
+            "path": "/v1/pokemon/top"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null,
+        "description": "This is sorted by CP"
+    },
+    {
+        "order": 11,
+        "instruction": "get top 20 trainers",
+        "endpoint": {
+            "method": "GET",
+            "path": "/v1/trainers/top"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null,
+        "description": "This is sorted by each trainer's top 6 pokemon's CP (the trainer must captured at least 10 unique pokemon to be eligible for this chart)"
+    },
+    {
+        "order": 12,
+        "instruction": "special evolve your pokemon!",
+        "description": "Not all pokemon are special evolvable, you can refer to the specialEvolutions.to property, the array should not be empty. ",
+        "rewards": "a super rare pokemon!",
+        "endpoint": {
+            "method": "PUT",
+            "path": "/v1/pokemon/:pokemonId/specialEvolve"
+        },
+        "requireAuth": true,
+        "query": null,
+        "body": null
+    }
+]
