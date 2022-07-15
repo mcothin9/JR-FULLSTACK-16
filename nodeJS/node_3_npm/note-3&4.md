@@ -147,7 +147,7 @@ class validationError extends CustomError {
 
 ## 将 middleware 注册到 app
 
-1. application level middleware
+application level middleware
 `app.use`注册到全局
 `app.get`注册到 GET 命令上
 `app.get('/', m1, m2, m3, (req, res) => {})` 触发顺序从m1开始到m3结束，最后是route handler
@@ -157,3 +157,33 @@ app.use(express.json());
 
 app.get('/', errorHandlerM1);
 ```
+
+# Practice (express-API.js)
+
+## cors problems
+```js
+const cors = (req, res, next) => {
+    res.setHearder("Access-Control-Allow-Origin", "*");
+    res.setHearder("Access-Control-Allow-Headers", "content-type");
+    res.setHearder("Access-Control-Allow-Origin", "PUT");
+    next();
+}
+
+app.use(cors);
+```
+
+## Router 路由器
+
+```js
+const taskRouter = express.Router();
+// mini-app
+taskRouter.get('/', (req, res) => {
+    res.json([1, 2, 3]);
+});
+
+// route handler
+const v1Router = express.Router();
+v1Router.use('/tasks', taskRouter);
+app.use('/v1', v1Router);
+
+// GET /v1/tasks
