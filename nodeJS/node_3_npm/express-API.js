@@ -47,7 +47,7 @@ app.get('/tasks', (req, res) => {
 
         // filter
         taskMap.forEach(element => {
-            if(element.description === description) {
+            if(element.description.includes(description)) {
                 matchedTasks.push(element);
             }
         });
@@ -125,3 +125,11 @@ app.delete('/tasks/:id', (req, res) => {
 });
 
 app.listen(3000);
+
+const cors = (req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    // res.setHeader('Access-Control-Allow-Headers', 'content-type');
+    next();
+};
+
+app.use(cors);
