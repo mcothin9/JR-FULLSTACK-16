@@ -35,26 +35,27 @@ app.post('/tasks', (req, res) => {
     return;
 });
 
-// app.get('/tasks', (req, res) => {
-//     // abstract the description from query
-//     const description = req.query.description;
-
-//     // create empty array to store filter result
-//     const matchedTasks = [];
-
-//     // filter
-//     taskMap.forEach(element => {
-//         if(element.description === description) {
-//             matchedTasks.push(element);
-//         }
-//     });
-
-//     // finish get by description with 200
-//     res.status(200).json(matchedTasks);
-//     return;
-// });
-
 app.get('/tasks', (req, res) => {
+
+    // If query contain description, return matched result
+    if(req.query.description !== null) {
+
+        const description = req.query.description;
+
+        // create empty array to store filter result
+        const matchedTasks = [];
+
+        // filter
+        taskMap.forEach(element => {
+            if(element.description === description) {
+                matchedTasks.push(element);
+            }
+        });
+
+        // finish with 200
+        res.status(200).json(matchedTasks);
+        return;
+    }
 
     // create empty array to store filter result
     const matchedTasks = [];
