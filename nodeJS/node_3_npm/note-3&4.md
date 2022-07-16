@@ -187,3 +187,17 @@ v1Router.use('/tasks', taskRouter);
 app.use('/v1', v1Router);
 
 // GET /v1/tasks
+```
+
+## high order function (curring function)
+
+为什么 `express.json()` 在使用时最后有括号？而其他 route handler 没有
+=> express.json() 实际上是一个包含着 middleware 的函数，调用后得到return的结果是一个middleware函数
+
+middleware: function(req, res, next) { }
+json: ( ) => {
+    // high order fucntion
+    return (req, res, next) => { }
+}
+
+app.use(express.json()) === app.use( (req, res, next) => { } )
