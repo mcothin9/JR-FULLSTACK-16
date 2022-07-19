@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --logo-size: 60px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    z-index: 2;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toogle {
+    position: relative;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    background: url(../assets/menu-3-line.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+.toogle.active {
+    background: url('../assets/menu-unfold-fill.svg');
+    background-repeat: no-repeat;
+}
+
+.menu {
+    z-index: 1;
+    display: none;
+}
