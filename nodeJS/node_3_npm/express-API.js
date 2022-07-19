@@ -38,7 +38,7 @@ app.post('/tasks', (req, res) => {
 app.get('/tasks', (req, res) => {
 
     // If query contain description, return matched result
-    if (req.query.description !== null) {
+    if(req.query.description !== null) {
 
         const description = req.query.description;
 
@@ -47,7 +47,7 @@ app.get('/tasks', (req, res) => {
 
         // filter
         taskMap.forEach(element => {
-            if (element.description.includes(description)) {
+            if(element.description.includes(description)) {
                 matchedTasks.push(element);
             }
         });
@@ -73,7 +73,7 @@ app.get('/tasks/:id', (req, res) => {
     // abstract the id from the param in url
     const id = req.params.id;
 
-    if (taskMap.has(id)) {
+    if(taskMap.has(id)) {
         // send the matched task to client
         res.status(200).json(taskMap.get(id));
         return;
@@ -87,7 +87,7 @@ app.put('/tasks/:id', (req, res) => {
     // abstract the id from the param in url
     const id = req.params.id;
 
-    if (taskMap.has(id)) {
+    if(taskMap.has(id)) {
         // abstract the description and done from the body
         const { description, done } = req.body;
         const newTask = {
@@ -106,7 +106,7 @@ app.put('/tasks/:id', (req, res) => {
         return;
     }
 
-    res.status(404).json({ "description": "Task not found" });
+    res.status(404).json({ "description": "Task not found"});
     return;
 });
 
@@ -115,7 +115,7 @@ app.delete('/tasks/:id', (req, res) => {
     const id = req.params.id;
 
     // delete the matching task
-    if (taskMap.delete(id)) {
+    if(taskMap.delete(id)) {
         res.status(204).json({ "description": "The task successfully deleted" });
         return;
     }
