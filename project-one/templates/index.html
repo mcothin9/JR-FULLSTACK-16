@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Mitchell</title>
 </head>
 <body>
     <nav class="navigator">
+        <div class="logo">
+            <img src="../assets/my-logo.png" alt="my-logo">
+        </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="card">
-        
+    <img src="../assets/city-background.jpg" alt="city-picture">
+    <div class="overlay"></div>
+
+    <div class="card" id="home">
+        <img id="cube" src="../assets/card-background.jpg" alt="cube-picture">
+        <img id="avatar" src="../assets/me.jpg" alt="my-photo">
+        <div class="text">
+            <h3>Mitchell Sun</h3>
+            <h4>Full-stack Software Developer</h4>
+        </div>
     </div>
 </body>
 </html>
