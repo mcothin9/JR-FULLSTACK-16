@@ -38,7 +38,6 @@ body {
   width: auto;
   height: auto;
 }
-
 body img {
   position: absolute;
   top: 0;
@@ -48,7 +47,6 @@ body img {
   object-fit: cover;
   opacity: 0.8;
 }
-
 body .overlay {
   position: absolute;
   top: 0;
@@ -58,6 +56,13 @@ body .overlay {
   background-color: rgb(69, 153, 208);
   mix-blend-mode: overlay;
 }
+body .card {
+  position: absolute;
+  margin: 0;
+  padding: 50px;
+  width: 5rem;
+  height: 5rem;
+}
 
 .text {
   padding: relative;
@@ -65,10 +70,9 @@ body .overlay {
 }
 
 #avator {
-  position: relative;
+  position: absolute;
   width: 3rem;
   height: 3rem;
-  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
