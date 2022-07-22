@@ -29,3 +29,8 @@ src ->
     -- user.controller.js
     -- user.model.js
 - tasks
+
+# Swagger
+
+1. swagger-ui-express
+2. swagger.jsdoc

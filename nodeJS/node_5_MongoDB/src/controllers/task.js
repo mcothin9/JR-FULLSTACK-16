@@ -8,6 +8,54 @@ class Task {
 }
 let _id = 1;
 
+// swagger 格式 => yaml
+
+/**
+ * @swagger
+ * components:
+ *  schemas:
+ *    Tasks:
+ *      type: Object
+ *      required:
+ *        - description
+ *      properties:
+ *        id:
+ *          type: string
+ *          description: auto generated unique identifier
+ *        description:
+ *          type: string
+ *          description: description of the task
+ *        done:
+ *          type: boolean
+ *          description: status of the task
+ *      example:
+ *        id: 1
+ *        description: task 1
+ *        done: false
+ */
+
+/**
+ * @swagger
+ * /tasks:
+ *  get:
+ *      summary: return all tasks
+ *      tags: [Task]
+ *      parameters:
+ *          - name: description
+ *            in: query
+ *            description: filter tasks ny description
+ *            schema:
+ *              type: string
+ *      responses:
+ *          200:
+ *              description: array of tasks
+ *              content:
+ *                  application/json:
+ *                      schema:
+ *                        type: array
+ *                        items:
+ *                          $ref: '#/components/schemas/Task'
+ */
 const getAllTasks = (req, res) => {
     const {description} = req.query;
     if (description) {
