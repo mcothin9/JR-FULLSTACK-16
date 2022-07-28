@@ -12,7 +12,7 @@ $overlay-color: rgb(192, 203, 210);
     font-family: $font-stack;
 }
 
-nav {
+.navigator {
     position: relative;
     top: 0;
     margin: 0;
@@ -42,18 +42,18 @@ nav {
     }
 }
 
-body {
+.card-home {
     width: auto;
     height: auto;
 
-    img {
+    .avatar {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 5%;
+        left: 5%;
+        width: 20%;
         object-fit: cover;
         opacity: 0.8;
+        z-index: 3;
     }
 
     .overlay {
@@ -73,6 +73,10 @@ body {
         width: 5rem;
         height: 5rem;
     }
+}
+
+img {
+    width: 70%;
 }
 
 .text {
