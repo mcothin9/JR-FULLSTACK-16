@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  border: blue 2px solid;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .navigator {
+  top: 0;
+  border: 2px solid red;
+  width: 70%;
+  height: 10%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+}
+.container .navigator .my-logo {
+  position: absolute;
+  left: 0;
+  border: 1px dotted rgb(55, 92, 0);
+  width: 10%;
+  height: 80%;
+  margin: auto;
+  text-align: center;
+}
+.container .navigator .nav-list {
+  position: absolute;
+  right: 0;
+  border: 1px dotted blueviolet;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .navigator .nav-list .nav-list-item a {
+  color: grey;
+}
+.container .navigator .nav-list .nav-list-item a:hover {
+  color: green;
+}
+.container .card {
+  border: #de0f0f solid 2px;
+  position: absolute;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  border-radius: 25px;
+}
+.container .card .avatar {
+  border: 2px solid red;
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  width: 30%;
+  height: 50%;
+}
+.container .card .avatar img {
+  width: 100%;
+  opacity: 100%;
+  z-index: 1;
+}
+.container .card .card-top {
+  position: absolute;
+  top: 0;
+  height: 55%;
+  width: 100%;
+  background: url(../assets/card-background.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: cover;
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+}
+.container .card .card-top .my-name {
+  border: 3px solid red;
+  position: absolute;
+  right: 50px;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container .card .card-top .my-name h1 {
+  color: aliceblue;
+}
+.container .card .card-top .my-name h4 {
+  color: aliceblue;
+}
+.container .card .card-top .my-name .socialMedia-list {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .card .card-top .my-name .socialMedia-list .linkedin-logo::before {
+  content: url("../assets/linkedin-box-fill.svg");
+}
+.container .card .card-top .my-name .socialMedia-list .github-logo::before {
+  content: url("../assets/github-fill.svg");
+}
+.container .card .card-top .my-name .socialMedia-list .mail-logo::before {
+  content: url("../assets/mail-send-fill.svg");
+}
+.container .card .card-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container footer {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  height: 5%;
+  text-align: center;
+}
+
+.change-color {
+  color: rgb(24, 103, 6);
+}
+
+/*# sourceMappingURL=style.css.map */
